@@ -1,0 +1,254 @@
+@font-face {
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-family: Poppins-Regular;
+}
+
+@font-face {
+  src: url("../fonts/Poppins-Bold.ttf");
+  font-family: Poppins-Bold;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins-Regular;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*Start Header Style*/
+
+.header-container {
+  background: #c2efd4;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo a {
+  text-decoration: none;
+  font-family: Poppins-Bold;
+  color: #224f34;
+  font-size: 40px;
+}
+
+.header .menu a {
+  color: #224f34;
+}
+
+header nav ul {
+  margin: 0;
+  display: flex;
+  font-family: Poppins-Regular;
+}
+
+header .menu .bar-icon {
+  display: none;
+}
+
+header .nav-item {
+  margin: 0 22px;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+.header .login-btn {
+  border: 2px solid #224f34;
+  border-radius: 3px;
+  padding: 2px 20px;
+}
+
+.header .login-btn a {
+  font-size: 20px;
+  color: #224f34;
+}
+/*End Header Style*/
+
+/*Start Hero Style*/
+.hero-container {
+  background: #c2efd4;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 0px;
+}
+
+.hero .hero-content {
+  width: 40%;
+  color: #224f34;
+  padding: 50px;
+}
+
+.hero .hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.hero .hero-content p {
+  padding: 20px 0px;
+  color: #267d49;
+  font-size: 23px;
+}
+.hero .hero-content a {
+  padding: 15px;
+  background: #224f34;
+  color: white;
+  font-size: 23px;
+  border-radius: 3px;
+  box-shadow: #eee;
+}
+
+.explor {
+  padding-top: 50px;
+}
+
+.hero-image {
+  width: 40%;
+}
+.hero-image img {
+  width: 70%;
+  background: #6bc785;
+  border-top-left-radius: 141px;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 82px;
+}
+
+/*Best Selling Section*/
+.best-selling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 114px;
+  padding-bottom: 184px;
+}
+.best-selling h3 {
+  color: #224f34;
+  font-size: 64px;
+}
+.best-selling p {
+  color: #224f34;
+  font-size: 22px;
+}
+
+.best-selling .cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.best-selling .cards-wrapper .card {
+  width: 30%;
+  padding-top: 20px;
+}
+.best-selling .cards-wrapper .card .card-image {
+  width: 100%;
+}
+.best-selling .cards-wrapper .card .card-image img {
+  background: #93b9a2;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.best-selling .cards-wrapper .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.best-selling .cards-wrapper .card-content .price-rate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.best-selling .cards-wrapper .card-content .price-rate h5 {
+  padding: 10px 30px;
+}
+.best-selling .cards-wrapper .card-content .price-rate i {
+}
+.best-selling .more {
+  padding-top: 80px;
+}
+.best-selling .more a {
+  color: #224f34;
+  border: 2px solid #224f34;
+  padding: 15px 40px;
+}
+
+.footer-container {
+  background: #224f34;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 115px;
+}
+.footer-flex a {
+  color: white;
+}
+
+.footer-flex .logo a {
+  text-decoration: none;
+  font-family: Poppins-Bold;
+  color: white;
+  font-size: 40px;
+}
+.footer-flex h5 {
+  color: white;
+  padding: 10px 0px;
+  font-size: 18px;
+}
+.footer-flex .social-media {
+  color: white;
+  padding: 10px 0px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-flex ul {
+  padding-left: 0;
+}
+.footer-flex ul li {
+  padding: 8px 0px;
+  color: #c2efd4 !important;
+}
+
+.stay-up {
+  padding-bottom: 115px;
+}
+.stay-up .stay-up-send .email {
+  border: 1px solid #a3f3be;
+  padding: 10px 20px;
+  background: #224f34;
+}
+
+.stay-up .stay-up-send .btn {
+  border: 1px solid #a3f3be;
+  padding: 10px 20px;
+  background: #a3f3be;
+  color: #224f34;
+}

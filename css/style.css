@@ -17,6 +17,7 @@
 body {
   margin: 0;
   font-family: Poppins-Regular;
+  width: 100%;
 }
 
 .container {
@@ -84,6 +85,7 @@ header nav ul li {
 /*Start Hero Style*/
 .hero-container {
   background: #c2efd4;
+  width: 100%;
 }
 .hero {
   display: flex;
@@ -95,7 +97,7 @@ header nav ul li {
 .hero .hero-content {
   width: 40%;
   color: #224f34;
-  padding: 50px;
+  padding: 50px 0px;
 }
 
 .hero .hero-content h1 {
@@ -155,10 +157,11 @@ header nav ul li {
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+  width: 100%;
 }
 
 .best-selling .cards-wrapper .card {
-  width: 30%;
+  width: 32%;
   padding-top: 20px;
 }
 .best-selling .cards-wrapper .card .card-image {
@@ -195,7 +198,138 @@ header nav ul li {
   border: 2px solid #224f34;
   padding: 15px 40px;
 }
+/*Proudcts Section*/
+.proudcts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.proudcts h3 {
+  color: #224f34;
+  font-size: 50px;
+  padding: 100px 0px;
+}
+.cards-products-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
 
+.cards-products-wrapper .proudct-card {
+  width: 22%;
+  padding: 20px 0px;
+}
+.cards-products-wrapper .proudct-card .card-image {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.cards-products-wrapper .proudct-card .card-image img {
+  width: 100%;
+}
+.cards-products-wrapper .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.cards-products-wrapper .card-content .price-rate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards-products-wrapper .card-content .price-rate h5 {
+  padding: 10px 30px;
+}
+/*For you section*/
+.for-you {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 220px 0px;
+}
+.for-you h3 {
+  font-size: 50px;
+  color: #224f34;
+}
+.for-you p {
+  font-size: 20px;
+  color: #224f34;
+  padding: 20px 0px;
+}
+
+.for-you .cards-warrper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 50px 0px;
+}
+.for-you .cards-warrper .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+.for-you .cards-warrper .card .image-div {
+  width: 100%;
+}
+.for-you .cards-warrper .card .image-div img {
+  width: 100%;
+  background: #d3e2d7;
+  border-radius: 3px;
+}
+.for-you .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/*FeedBack*/
+.feedback-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback-section h3 {
+  color: #224f34;
+  font-size: 50px;
+  padding-bottom: 80px;
+}
+.feedback-section .cards-wrapper-feed {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 20px 0px;
+}
+.feedback-section .cards-wrapper-feed .card-feedback {
+  width: 30%;
+  background: #ffff;
+  border-radius: 3px;
+  color: #6f6f6f;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 20px;
+}
+.feedback-section .cards-wrapper-feed .card-feedback span {
+  font-size: 40px;
+  color: #224f34;
+}
+.feedback-section .cards-wrapper-feed .card-feedback h5 {
+  padding: 20px 0px;
+  color: #224f34;
+  font-size: 22px;
+}
+/*Foorter Section*/
+::placeholder {
+  color: green;
+  opacity: 1; /* Firefox */
+}
 .footer-container {
   background: #224f34;
 }
@@ -251,4 +385,104 @@ header nav ul li {
   padding: 10px 20px;
   background: #a3f3be;
   color: #224f34;
+}
+@media only screen and (min-width: 767px) and (max-width: 1200px) {
+}
+@media only screen and (max-width: 768px) {
+  .menu nav {
+    display: none;
+  }
+  header .menu .bar-icon,
+  header .menu .login-btn {
+    display: flex;
+  }
+  header .menu .bar-icon {
+    font-size: 20px;
+  }
+  /*Hero*/
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .hero-content {
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+  }
+  .hero .hero-content h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .hero-image {
+    display: none;
+  }
+  .best-selling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .best-selling .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .best-selling .cards-wrapper .card {
+    width: 50%;
+  }
+  .proudcts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards-products-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+  .cards-products-wrapper .proudct-card {
+    width: 75%;
+    padding: 20px 0px;
+  }
+  .for-you {
+    text-align: center;
+  }
+  .for-you .cards-warrper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0px;
+  }
+  .for-you .cards-warrper .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+  .feedback-section h3 {
+    text-align: center;
+  }
+  .feedback-section .cards-wrapper-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    justify-content: center;
+    gap: 10px;
+  }
+  .feedback-section .cards-wrapper-feed .card-feedback {
+    width: 80%;
+    background: #ffff;
+    border-radius: 3px;
+    color: #6f6f6f;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 20px;
+  }
 }
